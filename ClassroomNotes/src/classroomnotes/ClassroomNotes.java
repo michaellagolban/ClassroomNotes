@@ -18,6 +18,7 @@ public class ClassroomNotes {
         System.out.println("Aloha!!!!");
         System.out.println("Buon giorno seniorita! Come stai?");
         System.out.println("Facem inca un commit cu mesaj diferit");
+        System.out.println("eu unde trebuie sa sciu comentariul?");
     }
     
 }
