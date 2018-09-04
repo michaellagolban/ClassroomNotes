@@ -16,6 +16,7 @@ public class ClassroomNotes {
      */
     public static void main(String[] args) {
         System.out.println("Aloha!!!!");
+        System.out.println("Buon giorno seriorita! Come stai?")
     }
     
 }
