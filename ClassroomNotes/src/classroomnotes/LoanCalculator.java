@@ -4,6 +4,10 @@
  * and open the template in the editor.
  */
 package classroomnotes;
+package classroomnotes;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
 /**
  *
@@ -11,7 +15,27 @@ package classroomnotes;
  */
 public class LoanCalculator {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter Yout name: ");
+        String name = scanner.nextLine();
+        
+        System.out.print("Enter loan amount: ");
+        double loan = scanner.nextDouble();
+        
+        System.out.print("Enter period: ");
+        int period = scanner.nextInt();
+          
+        double percentage = 1.+ 8./100./4. * period;
+        double totalAmount = loan * percentage;
+        double interest = totalAmount - loan;
+        double mounthlyRate = totalAmount / (period * 12);
+        
+        DecimalFormat df2 = new DecimalFormat(".##");
+        
+        System.out.println("user: " + name +" wanna take " + loan + " $ for " + period + " years. ");
+        System.out.println("Total interest to paid: " + interest + "$");
+        System.out.println("Total amount to paid: " + totalAmount + "$");
+        System.out.println("Mounthly payments rates: " + df2.format(mounthlyRate) + " $");
     }
-    
 }
