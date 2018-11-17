@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author Michaela
@@ -23,7 +24,7 @@ public class OpenFileBuffer {
     public static void main(String[] args) throws IOException {
         BufferedReader r; 
         try {
-            r = new BufferedReader(new FileReader("C:\\Users\\gheor\\Desktop\\text.txt"));
+            r = new BufferedReader(new FileReader("C:\\Users\\Michaela\\Desktop\\1.txt"));
             try { 
               String firstLine = r.readLine();
               System.out.println("Am citit din fisier: "+ firstLine);
