@@ -26,7 +26,7 @@ public class SmthInteresting {
         System.out.print("Enter period : ");
 //        TODO add sequence of code that will read the period of time (which is an int)
 //        int period = ?????;
-        int period;
+        int period = 0;
 
         // so now we have our name, loan amount and period of time, so we can calculate our percentage!
         //The important thing is to specify dot after each number. If you don't put a dot, the compiler will interpret
